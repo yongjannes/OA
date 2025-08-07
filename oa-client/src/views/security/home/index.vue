@@ -6,10 +6,10 @@ import { useRouter, useRoute } from "vue-router"
 import { apiBaseUrl, localTokenName } from '@/constants'
 import { ElMessage } from 'element-plus'
 
-// import Avatar from './Avatar.vue'//引入一个自定义组件
+import Avatar from './Avatar.vue'//引入一个自定义组件
 const avatarRef = ref(null);//avatarRef这个变量就表示页面上以标签形式引入的Avatar组件对象
 
-// import Pwd from './Pwd.vue'
+import Pwd from './Pwd.vue'
 const pwdRef = ref(null);
 
 
