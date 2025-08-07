@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oadb
+    username: root
+    password: 123456
+
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+
+
+logging:
+  level:
+    root: info
+    web: trace
+    org.xdq.demo: debug
+
+oa:
+  token:
+    expire-time: 999999 #令牌过期时间，单位：秒
+  anonUrls:
+    - /security/login
+    - /res/**
+
+pagehelper:
+  reasonable: true #分页合理化：请求页数不合理时，自动转换未合理页数
+  helper-dialect: mysql #指明使用的数据库
+server:
+  port: 8088
