@@ -33,6 +33,7 @@ const login = async () => {
     ElMessage.success('登录成功！');
     const token = res.data;
     localStorage.setItem(localTokenName, token);
+    router.push({ path: '/security/home' })
 
 }
 
