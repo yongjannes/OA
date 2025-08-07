@@ -27,4 +27,4 @@ pagehelper:
   reasonable: true #分页合理化：请求页数不合理时，自动转换未合理页数
   helper-dialect: mysql #指明使用的数据库
 server:
-  port: 8088
+  port: 9999
